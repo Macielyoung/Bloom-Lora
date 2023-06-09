@@ -72,7 +72,7 @@ python3 generate_instruction.py generate_instruction_following_data --api=chat -
 python processing.py
 
 # 模型微调(trainer目录下)
-deepspeed --include=localhost:0,1 deepspeed_finetune_lora.py
+deepspeed --include=localhost:0,1 deepspeed_finetune_lora.py --deepspeed --deepspeed_config deepspeed.json
 ```
 
 
